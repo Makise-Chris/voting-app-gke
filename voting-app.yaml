@@ -39,8 +39,11 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
+      name: voting-app-vote
       targetPort: 80
     - port: 81
+      name: voting-app-result
       targetPort: 81
     - port: 82
+      name: voting-app-worker
       targetPort: 82
