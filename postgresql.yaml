@@ -9,8 +9,8 @@ spec:
       name: postgresql
   template:
     metadata:
-      name: postgresql
       labels:
+        name: postgresql
         app: voting-app
     spec:
       containers:

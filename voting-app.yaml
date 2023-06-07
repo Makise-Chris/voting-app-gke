@@ -9,8 +9,8 @@ spec:
       name: voting-app
   template:
     metadata:
-      name: voting-app
       labels:
+        name: voting-app
         app: voting-app
     spec:
       containers:

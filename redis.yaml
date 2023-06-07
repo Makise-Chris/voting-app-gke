@@ -9,8 +9,8 @@ spec:
       name: redis
   template:
     metadata:
-      name: redis
       labels:
+        name: redis
         app: voting-app
     spec:
       containers:
