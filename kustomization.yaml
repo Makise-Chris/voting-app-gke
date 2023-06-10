@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - vote-deployment.yaml
   - vote-service.yaml
+  - vote-hpa.yaml
   - result-deployment.yaml
   - result-service.yaml
   - worker-deployment.yaml
