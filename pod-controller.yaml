@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pod-controller
+  name: pod-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pod-controller
+  template:
+    metadata:
+      labels:
+        app: pod-controller
+    spec:
+      containers:
+      - image: trieu81200111/pod-controller
+        name: pod-controller
