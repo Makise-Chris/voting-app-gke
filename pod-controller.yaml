@@ -15,5 +15,5 @@ spec:
         app: pod-controller
     spec:
       containers:
-      - image: trieu81200111/pod-controller
+      - image: trieu81200111/pod-controller:lastest
         name: pod-controller
