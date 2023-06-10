@@ -7,7 +7,7 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: vote
-  minReplicas: 2
+  minReplicas: 1
   maxReplicas: 5
   metrics:
   - type: Resource
@@ -16,3 +16,15 @@ spec:
       target:
         type: Utilization
         averageUtilization: 30
+status:
+  observedGeneration: 1
+  lastScaleTime: <some-time>
+  currentReplicas: 1
+  desiredReplicas: 1
+  currentMetrics:
+  - type: Resource
+    resource:
+      name: cpu
+      current:
+        averageUtilization: 0
+        averageValue: 0
